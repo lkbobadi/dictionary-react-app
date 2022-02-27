@@ -82,11 +82,11 @@ input[type="submit"]:hover {
   border-top: 15px solid #d2e69c;
   padding-top: 20px;
   background: rgb(255, 186, 140);
-  height: 50vh;
 }
 
 .contents {
   padding: 50px;
+  height: auto;
 }
 
 .phonics {
