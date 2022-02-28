@@ -36,6 +36,9 @@ export default function Search() {
         </div>
         <Results results={results} />
       </form>
+      <div className='footer'>
+        Open Source by <span className='github-link'>Laura Bobadilla</span>
+      </div>
     </div>
   );
 }

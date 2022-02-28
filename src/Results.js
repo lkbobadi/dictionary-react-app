@@ -15,9 +15,6 @@ export default function Results(props) {
             );
           })}
         </div>
-        <div className='footer'>
-          Open Source by <span className='github-link'>Laura Bobadilla</span>
-        </div>
       </div>
     );
   } else {
