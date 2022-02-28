@@ -1,5 +1,4 @@
 import React from "react";
-import Content from "./Content";
 import Search from "./Search";
 import "./App.css";
 
@@ -10,9 +9,7 @@ export default function App() {
         <Search />
       </div>
 
-      <div className='content-section pe-0'>
-        <Content />
-      </div>
+      <div className='content-section pe-0'></div>
     </div>
   );
 }

@@ -79,7 +79,6 @@ input[type="submit"]:hover {
 }
 
 .content-section {
-  border-top: 15px solid #d2e69c;
   padding-top: 20px;
   background: rgb(255, 186, 140);
 }
