@@ -95,8 +95,9 @@ input[type="submit"]:hover {
 }
 
 .synonyms {
-  font-size: 15px;
+  font-size: 12px;
   font-style: italic;
+  font-weight: 600;
   color: rgb(156, 30, 30);
   background-color: #fff;
   margin: 5px;
