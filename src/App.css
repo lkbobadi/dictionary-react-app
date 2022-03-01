@@ -93,3 +93,14 @@ input[type="submit"]:hover {
   font-style: italic;
   font-size: 20px;
 }
+
+.synonyms {
+  font-size: 15px;
+  font-style: italic;
+  color: rgb(156, 30, 30);
+  background-color: #fff;
+  margin: 5px;
+  width: 100px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
