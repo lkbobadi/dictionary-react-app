@@ -21,9 +21,11 @@ export default function Search() {
 
   return (
     <div className='search-section pt-5'>
-      <h1 className='title mt-5'>Dictionary</h1>
+      <h1 className='title mt-5'>
+        <a href='/'>Dictionary</a>
+      </h1>
       <h2>Broaden your horizon!</h2>
-      <form onSubmit={search} class='pb-5'>
+      <form onSubmit={search} className='pb-5'>
         <div className='search-wrap'>
           <input
             type='search'

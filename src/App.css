@@ -88,12 +88,6 @@ input[type="submit"]:hover {
   height: auto;
 }
 
-.phonics {
-  color: rgb(124, 0, 0);
-  font-style: italic;
-  font-size: 20px;
-}
-
 .synonyms {
   font-size: 12px;
   font-style: italic;
