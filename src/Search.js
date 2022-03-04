@@ -68,7 +68,16 @@ export default function Search(props) {
           <Photos photos={photos} />
         </form>
         <div className='footer'>
-          Open Source by <span className='github-link'>Laura Bobadilla</span>
+          Open Source by{" "}
+          <span className='github-link'>
+            <a
+              href='https://github.com/lkbobadi/dictionary-react-app'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Laura Bobadilla
+            </a>
+          </span>
         </div>
       </div>
     );
