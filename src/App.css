@@ -195,6 +195,15 @@ input[type="submit"]:hover {
   color: var(--button-color);
   border: 1px solid #fff;
 }
+
+.photo-section {
+  font-size: 12px;
+  text-align: justify;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 3px 3px 8px var(--button-color);
+}
+
 @media (max-width: 415px) {
   .meaning-section {
     width: 100%;
@@ -209,6 +218,7 @@ input[type="submit"]:hover {
   }
 
   .example {
+    padding-left: 0;
     width: 100%;
   }
 
@@ -224,5 +234,10 @@ input[type="submit"]:hover {
 
   .phonetic-text {
     font-size: 8px;
+  }
+
+  .photo-section {
+    width: 100%;
+    margin: 0;
   }
 }
