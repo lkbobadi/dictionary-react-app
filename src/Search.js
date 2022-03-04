@@ -7,6 +7,7 @@ export default function Search(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
+
   function handleResponse(response) {
     setResults(response.data[0]);
   }
@@ -15,6 +16,10 @@ export default function Search(props) {
     axios.get(apiUrl).then(handleResponse);
   }
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    search();
+  }
   function handleKeywordChange(e) {
     setKeyword(e.target.value);
   }
@@ -31,12 +36,13 @@ export default function Search(props) {
           <a href='/'>Dictionary</a>
         </h1>
         <h2>Broaden your horizon!</h2>
-        <form onSubmit={search} className='pb-5'>
+        <form onSubmit={handleSubmit} className='pb-5'>
           <div className='search-wrap'>
             <input
               type='search'
               id='search'
               onChange={handleKeywordChange}
+              defaultValue={props.defaultKeyword}
               placeholder='Search for a word...'
             />
             <br />
