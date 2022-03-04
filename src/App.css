@@ -1,5 +1,14 @@
+:root {
+  --body-color: #c1f7dc;
+  --font-color: #824670;
+  --button-color: #c3d2d5;
+  --border-color: #bda0bc;
+  --shadow-color: #a2708a;
+}
+
 body {
   font-family: "Roboto Serif", sans-serif;
+  background: var(--body-color);
 }
 .container {
   max-width: 100%;
@@ -17,11 +26,29 @@ h1 {
   font-size: 60px;
 }
 
+h1 a {
+  color: #8fd9a8;
+  text-decoration: none;
+  transition: 200ms ease-in-out;
+}
+
+h1 a:hover {
+  color: #095353;
+}
+
 h2 {
   font-family: "Roboto Serif", sans-serif;
   font-size: 20px;
-  color: rgb(58, 27, 8);
+  color: var(--font-color);
   font-style: italic;
+}
+
+h3 {
+  color: var(--font-color);
+  width: 350px;
+  padding: 10px;
+
+  margin: 0 auto;
 }
 
 .search-section {
@@ -80,7 +107,7 @@ input[type="submit"]:hover {
 
 .content-section {
   padding-top: 20px;
-  background: rgb(255, 186, 140);
+  background: var(--body-color);
 }
 
 .contents {
@@ -88,14 +115,67 @@ input[type="submit"]:hover {
   height: auto;
 }
 
+.meaning-section {
+  font-size: 12px;
+  margin: 0 auto;
+  text-align: justify;
+  color: rgb(27, 18, 18);
+  background: #fff;
+  padding: 10px;
+  width: 500px;
+  box-shadow: 3px 3px 8px var(--button-color);
+}
+
 .synonyms {
+  display: flex;
+  text-align: center;
+}
+
+.synonym {
   font-size: 12px;
   font-style: italic;
   font-weight: 600;
-  color: rgb(156, 30, 30);
-  background-color: #fff;
-  margin: 5px;
-  width: 100px;
+  color: var(--font-color);
+  background-color: var(--button-color);
+  padding: 5px;
   border-radius: 10px;
+  border: 1px solid var(--button-color);
+  width: 80px;
+}
+
+.audio {
+  text-decoration: none;
+  color: var(--font-color);
+  background: var(--button-color);
+  border: 1px solid var(--button-color);
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 12px;
+  transition: 200ms all ease-in-out;
+  flex-direction: row;
+}
+
+.phonetic-section {
   margin: 0 auto;
+  background: #fff;
+  padding: 10px;
+  width: 500px;
+  box-shadow: 3px 3px 8px var(--button-color);
+}
+
+.phonetic-set {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.phonetic-text {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.audio:hover {
+  background: var(--font-color);
+  color: var(--button-color);
+  border: 1px solid #fff;
 }

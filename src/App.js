@@ -7,10 +7,8 @@ export default function App() {
   return (
     <div className='container-fluid m-0 p-0'>
       <div className='App'>
-        <Search />
+        <Search defaultKeyword='Hello' />
       </div>
-
-      <div className='content-section pe-0'></div>
     </div>
   );
 }
