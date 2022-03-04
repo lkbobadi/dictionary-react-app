@@ -197,11 +197,18 @@ input[type="submit"]:hover {
 }
 
 .photo-section {
-  font-size: 12px;
-  text-align: justify;
+  display: flex;
+  margin: 0 auto;
   background: #fff;
   padding: 10px;
+  width: 500px;
   box-shadow: 3px 3px 8px var(--button-color);
+}
+
+.photo {
+  margin: 0 auto;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 
 @media (max-width: 415px) {
@@ -237,7 +244,12 @@ input[type="submit"]:hover {
   }
 
   .photo-section {
-    width: 100%;
+    width: 320px;
+    box-sizing: content-box;
+    margin: 0 auto;
+  }
+
+  .photo {
     margin: 0;
   }
 }
