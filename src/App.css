@@ -208,7 +208,6 @@ input[type="submit"]:hover {
 .photo {
   margin: 0 auto;
   justify-content: space-evenly;
-  flex-direction: row;
 }
 
 .footer {
